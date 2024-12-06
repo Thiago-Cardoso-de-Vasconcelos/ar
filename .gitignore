@@ -1,0 +1,16 @@
+# Ignorar o arquivo de variáveis de ambiente
+.env
+
+# Ignorar o diretório node_modules (caso esteja usando o Node.js)
+node_modules/
+
+# Ignorar logs
+*.log
+
+# Ignorar arquivos de build
+.next/
+dist/
+
+# Ignorar arquivos do sistema operacional
+.DS_Store
+Thumbs.db
