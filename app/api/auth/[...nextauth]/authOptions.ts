@@ -7,6 +7,11 @@ export const authOptions: AuthOptions = {
     GoogleProvider({
       clientId: process.env.GOOGLE_CLIENT_ID!,
       clientSecret: process.env.GOOGLE_CLIENT_SECRET!,
+      authorization: {
+        params: {
+          prompt: 'select_account', // Força o Google a perguntar qual conta usar
+        },
+      },
     }),
   ],
   callbacks: {
